@@ -1,0 +1,250 @@
+﻿ul, ol {
+margin: 0;
+}
+
+a {
+  color: #1B242F;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #E74C3C;
+  text-decoration: underline;
+}
+
+li.fb a span {
+width: 30px;
+height: 30px;
+background: url(../images/img-sprite.png)no-repeat -59px -1px #1287BF;
+float: left;
+}
+
+
+
+ul.header_box li span {
+color: #555;
+}
+
+.header_top {
+float: right;
+}
+
+.logo {
+float: left;
+}
+
+ul.header_box li {
+display: inline-block;
+}
+
+ul.header_box {
+list-style: none;
+padding: 0;
+float: left;
+margin: 3px 20px 0 0px;
+}
+
+ul.header_box li.mobile_left {
+border-right: 1px solid #E1E1E1;
+padding-right: 15px;
+}
+
+ul.facebook {
+list-style: none;
+padding: 0;
+float: left;
+}
+
+#banner {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+#banner img { 
+  width: 100%;
+}
+#bannertext { 
+position: absolute; 
+top: 10%;
+margin: auto;
+width: 100%; 
+height: 100%;
+line-height:100%;
+ }
+
+i.icon1 {
+width: 100px;
+height: 100px;
+background: url(../images/img-sprite.png)no-repeat -95px 1px;
+display: inline-block;
+}
+
+i.icon2 {
+width: 100px;
+height: 100px;
+background: url(../images/img-sprite.png)no-repeat -199px 1px;
+display: inline-block;
+}
+
+i.icon3 {
+width: 100px;
+height: 100px;
+background: url(../images/img-sprite.png)no-repeat -95px -91px;
+display: inline-block;
+}
+
+.approach {
+background: #f3f3f3;
+padding: 1em 0 1em;
+}
+p{
+	font-size:16px;
+}
+
+.header {
+background: #f0f2f4;
+border-bottom: 1px solid #e6e7e7;
+height:100%;
+margin: 5px;
+}
+
+ul.list1 {
+list-style: none;
+margin: 15px;
+padding: 10px;
+box-shadow: 0 0 5px #aaa;
+position: relative;
+margin-bottom: 1em;
+background: #FFF;
+border-radius: 3px;
+}
+
+ul.list1 li.list1_img {
+float: left;
+width: 36%;
+}
+
+ul.list1 li.list1_desc {
+float: left;
+width: 61%;
+padding: 1em;
+margin-left: 1em;
+}
+
+.work {
+padding: 1em 0;
+background: #f35e59;
+color: #fff;
+}
+
+ul.list2 {
+list-style: none;
+margin: 15px;
+padding: 10px;
+box-shadow: 0 0 5px #aaa;
+position: relative;
+margin-bottom: 1em;
+background: #FFF;
+border-radius: 3px;
+}
+
+ul.list2 li.list1_desc {
+float: left;
+width: 20%;
+padding: 1em;
+text-align: right;
+}
+
+ul.list2 li.list1_img {
+float: right;
+width: 75%;
+}
+
+.footer {
+background: #2a2a2a;
+padding: 1em 0;
+color: #fff;
+}
+
+.social li a i.facebook {
+background-position: 5px -46px;
+}
+
+.social li a i {
+width: 50px;
+height: 50px;
+display: block;
+background: url(../images/img-sprite.png) no-repeat;
+border: 2px solid #515151;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-o-border-radius: 3px;
+}
+
+element.style {
+}
+.social li:first-child {
+margin-left: 0;
+}
+.social li {
+display: inline-block;
+margin-left: 12px;
+}
+
+.social li a i.twitter {
+background-position: -34px -46px;
+}
+
+.social li a i.google {
+background-position: -1px -87px;
+}
+
+.social li a i.linkedin {
+background-position: -36px -85px;
+}
+
+							/*Модальное окно*/
+							
+#modal_form {
+	width: 300px; 
+	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
